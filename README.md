@@ -20,12 +20,14 @@ We rely on a sliding buffer $`W = [\boldsymbol{x}_{t-\omega}, \dots, \boldsymbol
 
 ### Learning Procedure
 When a new sample $`\boldsymbol{x}_t`$ is received from the data stream we run, independently on each *Online Isolation Tree*, a learning procedure to update the tree. The learning procedure involves sending the incoming sample $`\boldsymbol{x}_t`$ to the corresponding leaf of the *Online Isolation Tree*, and updating the heights $`h`$ and bin supports $`\mathcal{R}`$ of all the bins along the path accordingly. When a leaf reaches the maximum height $`\hat{h}`$, we split the corresponding bin in two according to the procedure illustrated in the image below and described thoroughly in [[1]](#1).
+
 <p align="center">
   <img src="./images/method/support.svg" height="150" />
   <img src="./images/method/split.svg" height="150" />
   <img src="./images/method/points.svg" height="150" /> 
   <img src="./images/method/new_support.svg" height="150" />
 </p>
+
 The learning procedure is repeated until the window $`W`$ gets full then, together with the learning procedure for the new incoming sample $`\boldsymbol{x}_t`$, we include a forgetting procedure for the oldest sample $`\boldsymbol{x}_{t−\omega}`$ in $`W`$.
 
 ### Forgetting procedure
