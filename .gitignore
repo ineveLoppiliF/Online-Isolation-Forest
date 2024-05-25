@@ -1,0 +1,8 @@
+# ignore PyCharm files
+.idea
+
+# ignore Python compiled bytecode
+**/*.pyc
+
+# ignore virtual environment
+venv
