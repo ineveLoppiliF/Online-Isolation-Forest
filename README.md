@@ -1,4 +1,4 @@
-# Online Isolation Forest
+# Online Isolation Forest [[1]](#1)
 
 The anomaly detection literature is abundant with offline methods, which require repeated access to data in memory, and impose impractical as sumptions when applied to a streaming context.
 *Online Isolation Forest* is an anomaly detection algorithm explicitly designed for streaming conditions, and it seamlessly tracks the data generating process as it evolves over time.
@@ -49,7 +49,15 @@ In order to play with the demo you just need to:
 
 <hr>
 
-#### References:
-<a id="1">[1]</a>
-Filippo Leveni, Guilherme Weigert Cassales, Bernhard Pfahringer, Albert Bifet and Giacomo Boracchi. "Online Isolation Forest." 2024 Proceedings of the 41st International Conference on Machine
-Learning (ICML), Vienna, Austria.
+#### BibTex Citation
+<a id="1">[1]</a>  
+If you find *Online Isolation Forest* useful in your scientific publication, we would appreciate using the following citation:
+```
+@inproceedings{Leveni2024,
+	title        = {Online Isolation Forest},
+	author       = {Leveni, Filippo and Weigert Cassales, Guilherme and Pfahringer, Bernhard and Bifet, Albert and Boracchi, Giacomo},
+	booktitle    = {International Conference on Machine Learning (ICML)},
+	year         = {2024},
+	organization = {Proceedings of Machine Learning Research (PMLR)}
+}
+```
