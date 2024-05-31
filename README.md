@@ -60,7 +60,7 @@ the forgetting procedure, detailed in [[1]](#1).
 
 <hr>
 
-## Reproducibility
+### Reproducibility
 In this repository you can find the [datasets](datasets) and [scripts](experiments/scripts/test) used to 
 benchmark *Online Isolation Forest* and competing methods in [[1]](#1).  
 This repository also includes scripts used to 
@@ -69,9 +69,19 @@ This repository also includes scripts used to
 > Please note that due to the large size of some results, we have used [git-LFS](https://git-lfs.com/).
 You will need to install git-LFS to correctly clone the repository.
 
+> Please be aware that to correctly run the [scripts](experiments/scripts/test) used for benchmarking, you must adjust the pysad implementation of 
+> *Isolation Forest-ASD* to allow for a different number of tree estimators other than the default.  
+> Specifically, you need to modify the following lines in the file 
+> `python3.10/site-packages/pysad/models/iforest_asd.py` from:
+> >     def __init__(self, initial_window_X=None, window_size=2048):
+> >         super().__init__(IForest, window_size, window_size, initial_window_X)
+> to:
+> >     def __init__(self, initial_window_X=None, window_size=2048, **kwargs):
+> >         super().__init__(IForest, window_size, window_size, initial_window_X, **kwargs)
+
 <hr>
 
-## Demo
+### Demo
 [This](OnlineIForest) folder contains a Python implementation of the *Online Isolation Forest* algorithm.  
 Additionally, you can find a demo of the algorithm in [this](Online-iForest_demo.py) file.  
 In order to play with the demo you just need to:
