@@ -1,8 +1,8 @@
 matplotlib~=3.9.0
-numpy~=1.26.4
+numpy
 scikit-learn~=1.5.0
 tqdm~=4.66.4
-scipy~=1.13.1
+scipy
 pysad~=0.2.0
 autorank~=1.1.3
 pandas~=2.2.2
