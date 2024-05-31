@@ -1,3 +1,6 @@
+import sys
+sys.path.append("../../..")
+
 from numpy import argwhere, array_split, ceil, empty, floor, genfromtxt, hstack, linspace, ndarray
 from numpy.random import choice
 from OnlineIForest import OnlineIForest
