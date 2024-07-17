@@ -8,7 +8,8 @@ from sklearn.utils import shuffle
 #%% Define execution parameters
 oiforest_params: dict = {'num_trees': 128,
                          'max_leaf_samples': 8,
-                         'window_size': 1024}
+                         'window_size': 1024,
+                         'type': 'fixed'}
 
 n_points: int = 1000
 fraction_outliers: float = 0.1
