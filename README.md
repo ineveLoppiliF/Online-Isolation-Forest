@@ -91,16 +91,27 @@ In order to play with the demo you just need to:
 
 <hr>
 
+#### Online Isolation Forest in CapyMOA
+*Online Isolation Forest* is part of the new release of [CapyMOA](https://capymoa.org/) Machine learning library tailored for data streams!!!
+There you can find [Installation](https://capymoa.org/installation.html) instructions, [Anomaly Detection](https://capymoa.org/notebooks/anomaly_detection.html) tutorials and [Online Isolation Forest](https://capymoa.org/api/modules/capymoa.anomaly.OnlineIsolationForest.html#capymoa.anomaly.OnlineIsolationForest) documentation. 
+
+<hr>
+
 #### BibTex Citation
 <a id="1">[1]</a>  
 If you find *Online Isolation Forest* useful in your scientific publication, we would appreciate using the following 
 citation:
 ```
 @inproceedings{Leveni2024,
-	title        = {Online Isolation Forest},
-	author       = {Leveni, Filippo and Weigert Cassales, Guilherme and Pfahringer, Bernhard and Bifet, Albert and Boracchi, Giacomo},
-	booktitle    = {International Conference on Machine Learning (ICML)},
-	year         = {2024},
-	organization = {Proceedings of Machine Learning Research (PMLR)}
+    title        = {Online Isolation Forest},
+    author       = {Leveni, Filippo and Weigert Cassales, Guilherme and Pfahringer, Bernhard and Bifet, Albert and Boracchi, Giacomo},
+    booktitle    = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+    volume       = {235},
+    pages        = {27288--27298},
+    year         = {2024},
+    editor       = {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+    series       = {Proceedings of Machine Learning Research (PMLR)},
+    month        = {21--27 Jul},
+    url          = {https://proceedings.mlr.press/v235/leveni24a.html},
 }
 ```
